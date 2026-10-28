@@ -3,7 +3,6 @@
 **Audience:** SOK Group Engineering & QA Teams  
 **Level:** Introductory / Hands-on Sandbox  
 **App under Test:** [Nexus Demo iOS App (v1.0.0 IPA)](https://github.com/BrowserStackCE/browserstack-demo-hub/releases/download/1.0.0/nexus-demo.ipa)  
-**Confluence Guide:** [Nexus App for Custom Demo](https://browserstack.atlassian.net/wiki/spaces/CE/pages/6618218667/Nexus+App+for+Custom+Demo)  
 
 ---
 
@@ -15,16 +14,6 @@ By the end of this session, you will be able to:
 3. **Execute** tests on real iOS and Android devices in the BrowserStack cloud.
 4. **Fix failing tests** automatically using AI root-cause analysis ("Fix Test").
 5. **Explore freely:** experiment with real-world scenarios like biometrics, camera scanning, and geolocation across dedicated hands-on labs.
-
----
-
-## ⏱️ Quick Agenda (2 – 2.5 Hours)
-
-* **00:00 – 00:20 | Quick Start & Setup:** Install plugin, login, and clone the starter project.
-* **00:20 – 00:50 | Lab 1 & Lab 2:** Prompt Test Companion to generate your first test and execute it on cloud real devices.
-* **00:50 – 01:20 | Lab 3 & Lab 4:** Intentional failure and AI self-healing ("Fix Test"), plus multimodal test generation from UI screenshots.
-* **01:20 – 02:00 | Lab 5: Sandbox Challenges (Pick Your Own Adventure):** Choose retail, banking (biometrics), or travel (geolocation).
-* **02:00 – 02:15 | Show & Tell + Q&A:** Share learnings, prompt patterns, and next steps for team rollout.
 
 ---
 
@@ -60,9 +49,8 @@ By the end of this session, you will be able to:
 1. Open the **Test Companion** chat panel in your IDE.
 2. Select the **E-Commerce / Retail Flow** in the Nexus app (representing everyday *S-Kaupat / Prisma* retail scenarios).
 3. Paste the following prompt into Test Companion:
-   > *"Write an Appium test for the Nexus demo app that launches the app, switches to the E-Commerce domain, searches for 'Organic Apples', adds 2 items to the cart, and asserts that the cart badge shows 2."*
-4. Review the generated code in the diff viewer.
-5. Click **Insert into File** or save it as `tests/ecommerce-cart.test.js`.
+   > *"Write a test for the Nexus demo app that launches the app, switches to the E-Commerce domain, perform dummy sign in using face ID, provide phone number and enter OTP as 123456. Search for 'Sunglasses', adds item to the cart, and asserts that the cart badge shows the item added."*
+4. Review the generated test.
 
 ---
 
@@ -70,15 +58,13 @@ By the end of this session, you will be able to:
 **Objective:** Execute your newly authored test directly against real iOS and Android hardware in the BrowserStack cloud.
 
 #### Instructions:
-1. In the Test Companion interface, click **Run on BrowserStack** (or execute via your configured npm/test runner command).
+1. In the Test Cases interface, click **Run on BrowserStack** (Lightning Icon).
 2. Select your target device profile:
    * **iOS:** *Apple iPhone 15 (iOS 17)*
-   * **Android:** *Samsung Galaxy S24 (Android 14)*
 3. Monitor the live execution stream directly inside your IDE sidebar.
 4. Click the generated test session link to open the BrowserStack Dashboard and inspect:
    * **Video Recording** of the physical device run.
-   * **Device Console & Appium Logs**.
-   * **Network Activity & Step-by-Step Screenshots**.
+   * **Session and Device Logs**.
 
 ---
 
@@ -136,10 +122,3 @@ By the end of this session, you will be able to:
 * **Specify assertions:** Tell the AI what success looks like (e.g., *"assert that the confirmation toast message contains 'Booking Confirmed'"*).
 * **Ask for Page Objects:** If you prefer clean architecture, say: *"Generate this test using the Page Object Model pattern"*.
 
----
-
-## 🙋 Help & Facilitators
-* **Need help during the workshop?** Drop a message in the workshop Slack/Teams channel or raise your hand.
-* **Useful Links:**
-  * [BrowserStack App Automate Docs](<redacted URL>)
-  * [Nexus App Confluence Page](https://browserstack.atlassian.net/wiki/spaces/CE/pages/6618218667/Nexus+App+for+Custom+Demo)
