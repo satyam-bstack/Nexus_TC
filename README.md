@@ -47,7 +47,7 @@ By the end of this session, you will be able to:
 
 #### Instructions:
 1. Open the **Test Companion** chat panel in your IDE.
-2. Select the **E-Commerce / Retail Flow** in the Nexus app (representing everyday *S-Kaupat / Prisma* retail scenarios).
+2. Select the **E-Commerce / Retail Flow** in the Nexus app.
 3. Paste the following prompt into Test Companion:
    > *"Write a test for the Nexus demo app that launches the app, switches to the E-Commerce domain, perform dummy sign in using face ID, provide phone number and enter OTP as 123456. Search for 'Sunglasses', adds item to the cart, and asserts that the cart badge shows the item added."*
 4. Review the generated test.
@@ -88,7 +88,7 @@ By the end of this session, you will be able to:
 **Objective:** Leverage multimodal AI to author full test assertions directly from visual assets without manually inspecting DOM/accessibility trees.
 
 #### Instructions:
-1. Capture a screenshot of any screen in the Nexus demo app (or grab one from the [Confluence Guide](https://browserstack.atlassian.net/wiki/spaces/CE/pages/6618218667/Nexus+App+for+Custom+Demo)).
+1. Capture a screenshot of any screen in the Nexus demo app.
 2. Drag and drop the screenshot directly into the Test Companion chat window.
 3. Prompt Test Companion:
    > *"Look at this screen. Write test assertions to verify that all primary call-to-action buttons, prices, and header text elements are displayed correctly."*
